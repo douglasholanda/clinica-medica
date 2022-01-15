@@ -1,0 +1,364 @@
+/**** CSS APLICÁVEL A PÁGINA TODA ****/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #7a7e80;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #08cbd3;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+
+header .container img {
+    width: 200px;
+    height: 100px;
+}
+
+.links-topo ul {
+    display: flex;
+}
+
+.links-topo a {
+    text-decoration: none;
+    color: #fbfcfc;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.links-topo a:hover {
+    color: #7a7e80;
+}
+
+.slogan {
+    background-image: url('../assets/recepcao.png');
+    background-size: cover;
+    height: 450px;
+    display: flex;
+    align-items: center;
+}
+
+.slogan h1 {
+    color: #fbfcfc;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 40px;
+    margin-left: 13%;
+}
+
+.info {
+    text-align: center;
+    width: 55%;
+    margin: 50px auto 15px auto;
+}
+
+.info h2 {
+    margin-bottom: 18px;
+    font-size: 35px;
+}
+
+.info p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#sobre {
+    margin-bottom: 30px;
+}
+
+.sobre-infos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-infos img {
+    margin-right: 20px;
+}
+
+.sobre-infos h3 {
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.sobre-infos ul {
+    margin-left: 35px;
+}
+
+.sobre-infos li {
+    line-height: 22px;
+}
+
+.especialidades {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.especialidades-tipos {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.especialidades-tipos figure {
+    box-shadow: 2px 4px 6px 0px rgb(50 50 50 / 31%);
+    margin: 0 20px;
+}
+
+.especialidades-tipos img {
+    width: 280px;
+    height: 190px;
+}
+
+.especialidades-tipos figcaption {
+    text-align: center;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.especialidades a {
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #2dc3db;
+    color: white;
+    padding: 10px 25px;
+    margin-top: 30px;
+}
+
+#contato {
+    margin-bottom: 60px;
+}
+
+#contato p:last-child {
+    margin-bottom: 35px;
+}
+
+#contato iframe {
+    display: block;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: #0d6c73;
+}
+
+footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+footer p {
+    color: white;
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/****FIM CSS WEB****/
+
+/**** INICIO CSS RESPONSIVO****/
+
+/**** 320PX - 425PX ****/
+@media (max-width: 425px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        background-color: #08cbd3;
+        height: auto;
+    }
+
+    header .container img {
+        border-bottom: 1px solid #7a7e80;
+        padding: 0 90px;
+        margin-bottom: 10px;
+        width: 130px;
+        height: 65px;
+    }
+
+    header nav {
+        margin-bottom: 15px;
+    }
+
+    .links-topo a {
+        margin: 0 18px;
+        font-size: 18px;
+    }
+
+    .slogan {
+        height: 175px;
+    }
+
+    .slogan h1 {
+        color: #fbfcfc;
+        text-transform: uppercase;
+        font-weight: normal;
+        font-size: 22px;
+        text-align: left;
+        line-height: 30px;
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    .info {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .info h2 {
+        font-size: 25px;
+    }
+
+    .info p {
+        font-size: 16px;
+    }
+
+    .sobre-infos img {
+        display: none;
+    }
+
+    .sobre-infos div {
+        width: 90%;
+    }
+
+    .sobre-infos h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .sobre-infos li {
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    .especialidades .info {
+        margin-bottom: 0;
+    }
+
+    .especialidades-tipos figure {
+        margin-bottom: 25px;
+    }
+
+    .especialidades a {
+        margin-top: 20px;
+    }
+
+    #contato iframe {
+        height: 250px;
+    }
+
+    footer .container {
+        width: 90%;
+        text-align: center;
+    }
+
+    footer img{
+        width: 40%;
+    }
+}
+
+/***** FIM - CELULARES ******/
+
+/******** 426PX - 768PX*******/
+@media (min-width: 426px) and (max-width: 768px) {
+    header .container {
+        height: 75px;
+    }
+
+    header .container img {
+        width: 110px;
+        height: 56px;
+        margin-top: 6px;
+        margin-left: 10px;
+    }
+
+    .slogan {
+        height: 185px;
+    }
+
+    .slogan h1 {
+        margin-left: 3%;
+        font-size: 27px;
+    }
+
+    .info {
+        width: 90%;
+    }
+
+    .info h2 {
+        font-size: 25px;
+    }
+
+    .info p {
+        font-size: 15px;
+        margin-bottom: 50px;
+    }
+
+    .sobre-infos img {
+        display: none;
+    }
+
+    .sobre-infos li {
+        line-height: 25px;
+        font-size: 15px;
+    }
+
+    .especialidades .info p {
+        margin-bottom: 0;
+    }
+
+    .especialidades-tipos figure {
+        margin: 20px;
+    }
+
+    #contato {
+        margin-bottom: 40px;
+    }
+
+    #contato .info p {
+        margin-bottom: 15px;
+    }
+
+    #contato iframe {
+        margin-top: 25px;
+        height: 270px;
+    }
+
+    footer img{
+        width: 25%;
+    }
+}
+
+/****** FIM - TABLETS ******/
+
+/******* 769PX - ACIMA *******/
+@media (max-width: 1024px) {
+}

@@ -1,0 +1,210 @@
+/*****ESTILIZAÇÃO PRINCIPAL******/
+
+.especialidades-header {
+    background-color: white;
+}
+
+.especialidades-header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.especialidades-header li {
+    margin: 20px;
+}
+
+.especialidades-header a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid #0ac8d0;
+    font-size: 18px;
+}
+
+.especialidades-header a:hover {
+    border-bottom: 3px solid #cdcdcd;
+    opacity: 0.9;
+}
+
+.especialidades-header h1 {
+    text-align: center;
+    margin: 25px 0 50px 0;
+    font-size: 26px;
+}
+
+.container-especialidade {
+    margin-bottom: 50px;
+}
+
+.especialidade-info {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.especialidade-info h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.especialidade-info p {
+    font-size: 16px;
+}
+
+.especialidade-tabela {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.especialidade-tabela img {
+    width: 25%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.tabela {
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.tabela thead {
+    background-color: #0ac8d0;
+    color: white;
+}
+
+.tabela thead th,
+.tabela td {
+    padding: 15px 30px;
+}
+
+.tabela .linha:nth-child(2n + 1) {
+    background-color: #cdcdcd;
+}
+
+.tabela .linha:nth-child(2n) {
+    background-color: #f1f1f1;
+}
+
+/***** FIM ESTILIZAÇÃO PRINCIPAL*****/
+
+/***** ESTILIZAÇÃO CELULARES ******/
+
+@media (max-width: 425px) {
+    header .container {
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        background-color: #08cbd3;
+        height: auto;
+    }
+
+    header .container img {
+        border-bottom: 1px solid #7a7e80;
+        padding: 0 90px;
+        margin-bottom: 10px;
+        width: 130px;
+        height: 65px;
+    }
+
+    header nav {
+        margin-bottom: 15px;
+    }
+
+    .links-topo a {
+        margin: 0 18px;
+        font-size: 18px;
+    }
+
+    .especialidades-header ul {
+        display: flex;
+        flex-flow: row wrap;
+        margin-top: 10px;
+    }
+
+    .especialidades-header li {
+        margin: 10px;
+    }
+
+    .especialidades-header h1 {
+        font-size: 20px;
+    }
+
+    .container-especialidade {
+        margin-bottom: 40px;
+    }
+    .especialidade-info {
+        width: 90%;
+        margin-bottom: 25px;
+    }
+
+    .especialidade-info h2 {
+        font-size: 18px;
+    }
+
+    .especialidade-tabela {
+        width: 100%;
+    }
+
+    .especialidade-tabela img {
+        display: none;
+    }
+
+    .tabela {
+        width: 100%;
+    }
+
+    .tabela thead th,
+    .tabela td {
+        padding: 10px 15px;
+    }
+
+    footer .container {
+        width: 90%;
+        text-align: center;
+    }
+
+    footer img{
+        width: 40%;
+    }
+}
+
+/*****FIM ESTILIZAÇÃO CELULARES*****/
+
+/**** INICIO ESTILIZAÇÃO TABLETS*****/
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .especialidades-header ul {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .especialidades-header li {
+        margin: 10px;
+    }
+
+    .especialidade-info{
+        width: 80%;
+    }
+    
+    .especialidade-tabela{
+        width: 90%;
+    }
+
+    .especialidade-tabela img{
+        display: none;
+    }
+
+    .tabela thead th,
+    .tabela td {
+        padding: 10px 25px;
+    }
+
+    footer img{
+        width: 25%;
+    }
+
+}
